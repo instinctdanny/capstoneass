@@ -45,7 +45,7 @@ create_tables_sql = [
     -- OLAP Dimension Tables
     CREATE TABLE IF NOT EXISTS olap.dim_customers (
         customer_id SERIAL PRIMARY KEY,
-        customer_name VARCHAR(150)
+        customername VARCHAR(150)
     );
 
     CREATE TABLE IF NOT EXISTS olap.dim_products (
@@ -56,7 +56,7 @@ create_tables_sql = [
 
     CREATE TABLE IF NOT EXISTS olap.dim_payments (
         payment_id SERIAL PRIMARY KEY,
-        payment_mode VARCHAR(150)
+        paymentmode VARCHAR(150)
     );
 
     CREATE TABLE IF NOT EXISTS olap.dim_location (

@@ -10,10 +10,10 @@ def get_db_connection(dbname, user, password, host='localhost', port='5432'):
             host=host,
             port=port
         )
-        print(f"✅ Connected to '{dbname}'")
+        print(f" Connected to '{dbname}'")
         return conn
     except Exception as e:
-        print("❌ Connection failed:", e)
+        print("Connection failed:", e)
         return None
 
 def create_all_tables(conn, table_sql_list):
@@ -23,6 +23,6 @@ def create_all_tables(conn, table_sql_list):
             cursor.execute(sql)
         conn.commit()
         cursor.close()
-        print("✅ All tables created successfully.")
+        print("All tables created successfully.")
     except Exception as e:
-        print("❌ Error creating tables:", e)
+        print("Error creating tables:", e)
