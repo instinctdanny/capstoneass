@@ -72,7 +72,7 @@ create_tables_sql = [
         month INT,
         quarter INT,
         year INT,
-        dow VARCHAR(15)
+        day_of_week VARCHAR(15)
     );
 
     -- OLAP Fact Table
